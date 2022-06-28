@@ -15,7 +15,24 @@ Usamos o conceito de grafo, onde cada matéria seria um nó e se uma matéria fo
 ## Instalação 
 **Linguagem**: Python<br>
 **Bibliotecas**: Matplotlib, Networkx, Flask, IO
+### Linux
 
-### Requisitos de instalação:
+#### Abra o terminal no repositório adequado
+> $ git clone https://github.com/projeto-de-algoritmos/Grafos1_FluxoGama
+
+- Entre na pasta do projeto
+> $ cd Grafos1_FluxoGama
+
+- Instale o pip3 (se ainda não possuir)
+> $ sudo apt install python3-pip
+
+- Baixe as bibliotecas
+> $ pip3 install -r requerimentos.txt
+
+- Rode o projeto
+> $ python3 app.py
+
+- Abra o navegador e digite 127.0.0.1:5000
+
 
 Alunos Ian da Costa Gama e Murilo Perazzo Barbosa Souto
