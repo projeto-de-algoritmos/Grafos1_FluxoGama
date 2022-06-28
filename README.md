@@ -14,7 +14,7 @@ Usamos o conceito de grafo, onde cada matéria seria um nó e se uma matéria fo
 ###### Tela inicial
 ![Alt text](/telaInicial.png?raw=true "Menu inicial")
 ###### Apresentação 1
-![Alt text](/apresentacao1.png?raw=true "Menu inicial")
+![Alt text](/Apresentacao1.png?raw=true "Menu inicial")
 ###### Apresentação 2
 ![Alt text](/apresentacao2.png?raw=true "Menu inicial")
 
