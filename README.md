@@ -11,6 +11,8 @@ A cada semestre, os alunos da Universidade de Brasília precisam escolher uma gr
 Usamos o conceito de grafo, onde cada matéria seria um nó e se uma matéria for pré-requisita de outra, então uma aresta direcional é formada da matéria pré-requisita para a posterior.
 
 ## Screenshots
+###### Tela inicial
+![Alt text](/telaInicial.png?raw=true "Menu inicial")
 
 ## Instalação 
 **Linguagem**: Python<br>
