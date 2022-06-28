@@ -42,3 +42,6 @@ Usamos o conceito de grafo, onde cada matéria seria um nó e se uma matéria fo
 
 
 Alunos Ian da Costa Gama e Murilo Perazzo Barbosa Souto
+
+Você pode acompanhar uma breve explicação sobre o trabalho em:
+Apresentacao_IaneMurilo.mp4
