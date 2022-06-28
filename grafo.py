@@ -20,7 +20,21 @@ class Grafo:
                           ("Gestão da Produção e Qualidade", "Qualidade de Software 1"),
                           ("Métodos de Desenvolvimento de Software", "Requisitos de Software"), ("Métodos de Desenvolvimento de Software", "Testes de Software"), ("Métodos de Desenvolvimento de Software", "Interação Humano Computador"),
                           ("Estrutura de Dados 1", "Compiladores 1"), ("Estrutura de Dados 1", "Estrutura de Dados 2"), ("Estrutura de Dados 1", "Projeto de Algoritmos"),
-                          ("Fundamentos de Arquiteturas de Computadores", "Fundamentos de Sistemas Operacionais"),
+                          ("Fundamentos de Arquiteturas de Computadores", "Fundamentos de Sistemas Operacionais"), 
+                          ("Matemática Discreta 2", "Sistemas de Banco de Dados 1"),
+                          ("Projeto Integrador de Engenharia 1", "Projeto Integrador de Engenharia 2"),
+                          ("Interação Humano Computador", "Qualidade de Software 1"),
+                          ("Requisitos de Software", "Arquitetura e Desenho de Software"),
+                          ("Sistemas de Banco de Dados 1", "Sistemas de Banco de Dados 2"),
+                          ("Fundamentos de Sistemas Operacionais", "Fundamentos de Redes de Computadores"), ("Fundamentos de Sistemas Operacionais", "Fundamentos de Sistemas Embarcados"),
+                          ("Compiladores 1", "Paradigmas de Programação"),
+                          ("Estruturas de Dados 2", "Programação para Sistemas Paralelos e Distribuídos"),
+                          ("Testes de Software", "Gerência de Configuração e Evolução de Software"), ("Testes de Software", "Técnicas de Programação em Plataformas Emergentes"),
+                          ("Arquitetura e Desenho de Software", "Técnicas de Programação em Plataformas Emergentes"),
+                          ("Fundamentos de Redes de Computadores", "Programação para Sistemas Paralelos e Distribuídos"),
+                          ("Técnicas de Programação em Plataformas Emergentes", "Engenharia de Produto de Software"),
+                          ("Engenharia de Produto de Software", "Projeto Integrador de Engenharia 2"),
+                          ("Trabalho de Conclusão de Curso 1", "Trabalho de Conclusão de Curso 2")
                           ])
   def todasMaterias(self):
     return ["Cálculo 1","Cálculo 2","Métodos Numéricos para Engenharia","Probabilidade e Estatística Aplicada à Engenharia","Projeto e Análisede Algoritmos","Física 1","Algoritmos e Programação de Computadores","Desenho Industrial Assistido por Computador","Engenharia e Ambiente","Introdução à Engenharia","Física 1 Experimental","Introdução à Álgebra Linear","Engenharia Econômica","Humanidades e Cidadania","Teoria de Eletrônica Digital 1","Prática de Eletrônica Digital 1","Orientação a Objetos","Matemática Discreta 1","Gestão da Produção e Qualidade","Métodos de Desenvolvimento de Software","Estruturas de Dados 1","Fundamentos de Arquiteturas de Computadores","Matemática Discreta 2","Projeto Integrador de Engenharia 1","Interação Humano Computador","Requisitos de Software","Sistemas de Banco de Dados 1","Fundamentos de Sistemas Operacionais","Compiladores 1","Estruturas de Dados 2","Qualidade de Software 1","Testes de Software","Arquitetura e Desenho de Software","Fundamentos de Redes de Computadores","Sistemas de Banco de Dados 2","Projeto de algoritmos","Técnicas de Programação em Plataformas Emergentes","Paradigmas de Programação","Fundamentos de Sistemas Embarcados","Programação para Sistemas Paralelos e Distribuídos","Engenharia de Produto de Software","Gerência de Configuração e Evolução de Software","Estágio Supervisionado","Trabalho de Conclusão de Curso 1","Projeto Integrador de Engenharia 2","Trabalho de Conclusão de Curso 2"]
@@ -30,9 +44,9 @@ class Grafo:
     caminho = []
     caminhos = []
     for node in self.grafo.nodes :
-      if self.grafo.in_degree(node) == 0 : # it's a root
+      if self.grafo.in_degree(node) == 0 :
         roots.append(node)
-      elif self.grafo.out_degree(node) == 0 : # it's a leaf
+      elif self.grafo.out_degree(node) == 0 :
         leaves.append(node)
 
     for root in roots :
