@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Graph</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body style="padding: 15px">
+    <h1 style="text-align: center;">
+      {% if (materia in caminhos) == false %}
+        A matéria pesquisada não existe!
+      {% else %}
+        {{ materia }}
+      {% endif %}
+    </h1>
+    <div style="display: flex;
+    justify-content: center;
+    align-items: center;">
+      <img 
+       src="{{ url_for('pagina') }}"
+       height="500"
+    />
+    </div>
+    <ul class="list-group">
+      {% for i in caminhos %}
+        {% for j in i %}
+          {% if j == materia %}
+          <li class="list-group-item list-group-item-success">{{ j }}</li>
+          {% elif j == i|first%}
+            <li class="list-group-item active">{{ j }}</li>
+          {% else %}
+            <li class="list-group-item">{{ j }}</li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </ul>
+    <p style="display: flex;
+    justify-content: center;
+    align-items: center;">
+      {%for i in caminhos%}
+        {%for j in i%}
+          {% if j == i|last %}
+            {{ j }}
+          {%else%}
+            {{ j + "->" }}
+          {%endif%}
+        {%endfor%}
+        <br>
+      {%endfor%}
+    </p>
+  </body>
+</html>
